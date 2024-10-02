@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar {
+    background-color: #f44336;
+    padding: 10px;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 4em;
+}
+
+.overlay p {
+    font-size: 1.5em;
+}
+
+.news-promo {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+}
+
+.news-promo marquee {
+    font-size: 1.2em;
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    position: relative;
+    width: 300px; 
+    height: 400px; 
+    margin: 20px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.producto:hover {
+   transform: scale(1.05);
+   box-shadow :0   8px   16px rgba(0,0,0,0.4);
+}
+
+.producto img {
+   width :100%; 
+   height :auto; 
+   transition :transform   .5s ease; 
+}
+
+.producto:hover img {
+   transform :scale(1.1);
+}
+
+.producto-info {
+   position :absolute; 
+   bottom :0; 
+   left :0; 
+   right :0; 
+   background-color :#f44336; 
+   padding :10px; 
+   text-align:center; 
+   color:black; 
+}
+
+.eventos-container {
+   display:flex; 
+   flex-wrap :wrap; 
+   justify-content:center; 
+}
+
+.evento {
+   position :relative; 
+   width :400px; 
+   height :300px; 
+   margin :20px; 
+   overflow:hidden; 
+   border-radius :10px; 
+   box-shadow :0   4px   8px rgba(0, 0, 0, .2); 
+   background-size :cover; 
+   background-position:center; 
+   transition :transform .3s ease-in-out; 
+}
+
+.evento:hover {
+   transform :scale(1.05);  
+}
+
+.evento-info {
+     position:absolute; /* Mantener como absoluto */
+     bottom :0; /* Cambiado para colocar el texto en la parte inferior */
+     left :50%; /* Mantener centrado horizontalmente */
+     transform :translateX(-50%); /* Solo centramos horizontalmente */
+     background-color:#00FF0000; /* Color de fondo opcional */
+     padding :20px; 
+     text-align :justify;  
+     border-radius :10px;  
+     color:white;  
+}
+footer {  
+     background-color:#333;  
+     color:white;  
+     padding :20px ;  
+     text-align:center ;  
+}  
+
+.social-links {  
+     list-style-type:none ;  
+     padding :0 ;  
+}  
+
+.social-links li {  
+     display:inline-block ;  
+     margin :0   10px ;  
+}  
+
+.social-links {  
+     list-style:none ;  
+     padding :0 ;  
+     display:flex ;  
+     gap :15px ; /* Espacio entre los iconos */  
+}  
+
+.social-links li {  
+     display:inline ;  
+}  
+
+.social-links a {  
+     text-decoration:none ;  
+     color:#fff ; /* Color del icono */  
+     font-size :24px ; /* Tamaño del icono */  
+     padding :10px ;  
+     border-radius :5px ; /* Bordes redondeados */  
+     transition :background-color .3s ; /* Efecto de transición */  
+}  
+
+.social-links a:hover {  
+     background-color:#555 ; /* Color de fondo al pasar el mouse */  
+}
